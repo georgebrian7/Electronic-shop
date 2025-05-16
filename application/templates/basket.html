@@ -1,0 +1,107 @@
+
+ {% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<ul>
+
+
+<p>Thank You for making a purchase with us</p>
+
+
+
+<div class="container">
+<div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="invoice-title">
+                        <h4 class="float-end font-size-15">Receipt #DS0204 <span class="badge bg-success font-size-12 ms-2">Paid</span></h4>
+                        <div class="mb-4">
+                           <h2 class="mb-1 text-muted">Electronics shop</h2>
+                        </div>
+                        <div class="text-muted">
+                            <p class="mb-1">Nairobi ngong Road</p>
+                            <p class="mb-1"><i class="uil uil-envelope-alt me-1"></i> electronics.com</p>
+                            <p><i class="uil uil-phone me-1"></i> 07465372536</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="text-muted">
+                                <h5 class="font-size-16 mb-3">Billed To:</h5>
+                                <h5 class="font-size-15 mb-2">Zyanamis</h5>
+                                <p class="mb-1"></p>
+                                <p class="mb-1">Zynamis.com</p>
+                                <p>+254 765 4783 </p>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-sm-6">
+                            <div class="text-muted text-sm-end">
+                                <div>
+                                    <h5 class="font-size-15 mb-1">Invoice No:</h5>
+                                    <p>#DZ0112</p>
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="font-size-15 mb-1">Invoice Date:</h5>
+                                    <p>17/05/2025</p>
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="font-size-15 mb-1">Order No:</h5>
+                                    <p>#1123456</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="py-2">
+                        <h5 class="font-size-15">Order Summary</h5>
+
+                        <div class="table-responsive">
+                            <table class="table align-middle table-nowrap table-centered mb-0">
+                                <thead>
+                                <tr>
+                                    <th>ITEM</th>
+                                    <th>PRICE</th>
+                                    <th>QUANTITY</th>
+                                </tr>
+                                {% for shop in shop_items %}
+                                    <tr>
+
+                                        <th>{{ shop.shop.brand }} {{ shop.shop }}</th>
+                                        <th>${{ shop.shop.price }}</th>
+                                        <th>{{ shop.quantity }}</th>
+{#                                        <th class="text-end" style="width: 120px;">Total</th>#}
+                                    </tr>
+                                {% endfor %}
+                                </thead><!-- end thead -->
+                                <tbody>
+
+
+
+                                    <tr>
+                                        <th scope="row" colspan="4" class="border-0 text-end">Total</th>
+                                        <td class="border-0 text-end"><h4 class="m-0 fw-semibold">${{ total_price }}</h4></td>
+                                    </tr>
+                                    <!-- end tr -->
+                                </tbody><!-- end tbody -->
+                            </table><!-- end table -->
+                        </div><!-- end table responsive -->
+                        <div class="d-print-none mt-4">
+                            <div class="float-end">
+                                <a href="{% url "store.html" %}" class="btn btn-success me-1"><i class="fa fa-print">Continue shopping</i></a>
+                                <a href="#" class="btn btn-primary w-md">Pay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end col -->
+    </div>
+</div>
+{% endblock %}}

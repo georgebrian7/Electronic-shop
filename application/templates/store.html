@@ -1,0 +1,58 @@
+
+ {% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+   <main class="main">
+
+    <!-- Best Sellers Section -->
+    <section id="best-sellers" class="best-sellers section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Best Sellers</h2>
+        <p>For quality and good prices choose us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+          <!-- Product 1 -->
+            {% for shop in shops %}
+          <div class="col-6 col-lg-3">
+            <div class="product-card" data-aos="zoom-in">
+              <div class="product-image">
+                <img src="{{ shop.image }}" class="main-image img-fluid" alt="Product">
+                <img src="{{ shop.image }}" class="hover-image img-fluid" alt="Product Variant">
+                <div class="product-overlay">
+                  <div class="product-actions">
+                    <button type="button" class="action-btn" data-bs-toggle="tooltip" title="{{ shop.brand }}">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                    <a href="{% url 'cart:add_cart' shop.id %}" class="btn-cart" methods="POST"><i class="action-btn">BUY</i> </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="product-details">
+                <div class="product-category">{{ shop.name }}</div>
+                <h4 class="product-title"><a href="store.html">{{ shop.model }}</a></h4>
+                <div class="product-meta">
+                  <div class="product-price">{{ shop.price }}</div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i>
+                    4.8 <span>(42)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+   {% endfor %}
+        </div>
+      </div>
+
+    </section><!-- /Best Sellers Section -->
+
+
+  </main>
+   {% endblock %}}

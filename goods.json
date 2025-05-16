@@ -1,0 +1,185 @@
+[
+    {
+      "id": 1,
+      "name": "Smartphone",
+      "brand": "Samsung",
+      "model": "Galaxy S24",
+      "price": 999.99,
+      "category": "Mobile Devices",
+      "image": "../../static/img/product/s24.jpeg"
+
+    },
+    {
+      "id": 2,
+      "name": "Laptop",
+      "brand": "Apple",
+      "model": "MacBook Pro 14",
+      "price": 1999.00,
+      "category": "Computers",
+      "image": "../../static/img/product/laptop.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Smartwatch",
+      "brand": "Garmin",
+      "model": "Forerunner 965",
+      "price": 599.99,
+      "category": "Wearables",
+      "image": "../../static/img/product/smartwatch.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Bluetooth Speaker",
+      "brand": "JBL",
+      "model": "Charge 5",
+      "price": 149.95,
+      "category": "Audio",
+      "image": "../../static/img/product/bluetooth.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Tablet",
+      "brand": "Apple",
+      "model": "iPad Air",
+      "price": 599.00,
+      "category": "Tablets",
+      "image": "../../static/img/product/ipad.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Smart TV",
+      "brand": "LG",
+      "model": "OLED C3 55",
+      "price": 1299.99,
+      "category": "Television",
+      "image": "../../static/img/product/tv.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Wireless Earbuds",
+      "brand": "Sony",
+      "model": "WF-1000XM5",
+      "price": 299.99,
+      "category": "Audio",
+      "image": "../../static/img/product/earbuds.jpeg"
+
+    },
+    {
+      "id": 8,
+      "name": "Gaming Console",
+      "brand": "Sony",
+      "model": "PlayStation 5",
+      "price": 499.99,
+      "category": "Gaming",
+      "image": "../../static/img/product/ps5.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Digital Camera",
+      "brand": "Canon",
+      "model": "EOS R50",
+      "price": 679.99,
+      "category": "Cameras",
+      "image": "../../static/img/product/camera.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Bluetooth Headphones",
+      "brand": "Bose",
+      "model": "QuietComfort 45",
+      "price": 329.00,
+      "category": "Audio",
+      "image": "../../static/img/product/headphones.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "E-reader",
+      "brand": "Amazon",
+      "model": "Kindle Paperwhite",
+      "price": 139.99,
+      "category": "Reading Devices",
+      "image": "../../static/img/product/ereader.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Router",
+      "brand": "Netgear",
+      "model": "Nighthawk AX12",
+      "price": 449.99,
+      "category": "Networking",
+      "image": "../../static/img/product/router.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Desktop PC",
+      "brand": "Dell",
+      "model": "XPS Tower",
+      "price": 1199.00,
+      "category": "Computers",
+      "image": "../../static/img/product/pc.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "External Hard Drive",
+      "brand": "Seagate",
+      "model": "Backup Plus 5TB",
+      "price": 129.99,
+      "category": "Storage",
+      "image": "../../static/img/product/harddrive.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Drone",
+      "brand": "DJI",
+      "model": "Mini 4 Pro",
+      "price": 799.00,
+      "category": "Drones",
+      "image": "../../static/img/product/drone.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Smart Home Hub",
+      "brand": "Google",
+      "model": "Nest Hub (2nd Gen)",
+      "price": 99.99,
+      "category": "Smart Home",
+      "image": "../../static/img/product/home.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Action Camera",
+      "brand": "GoPro",
+      "model": "Hero12 Black",
+      "price": 399.99,
+      "category": "Cameras",
+      "image": "../../static/img/product/go pro.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "Fitness Tracker",
+      "brand": "Fitbit",
+      "model": "Charge 6",
+      "price": 159.95,
+      "category": "Wearables",
+      "image": "../../static/img/product/fitbit.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "Monitor",
+      "brand": "ASUS",
+      "model": "ProArt Display 27",
+      "price": 499.00,
+      "category": "Computer Accessories",
+      "image": "../../static/img/product/monitor.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "Wireless Mouse",
+      "brand": "Logitech",
+      "model": "MX Master 3S",
+      "price": 99.99,
+      "category": "Computer Accessories",
+      "image": "../../static/img/product/mouse.jpg"
+    }
+  ]
+  

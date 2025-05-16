@@ -1,12 +1,37 @@
-# React + Vite
+# 🛍️ MyDjangoStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple eCommerce-style web application built with **Django** and styled using **Bootstrap 5**. This project demonstrates how to manage products, shopping carts, and session-based cart storage with a clean responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Django-based product listing and cart system
+- Session-based cart (no login required)
+- Bootstrap-powered responsive layout
+- Image upload support for products
+- Admin interface to manage products
+- Custom template rendering using Django’s template engine
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+
+- Django 4.x
+- Bootstrap 5
+- SQLite (default Django database)
+- HTML5, CSS3, JavaScript (for frontend)
+
+---
+## Running on local machine
+
+pip install -r requirements.txt
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
+python manage.py runserver
+
